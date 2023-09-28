@@ -17,7 +17,7 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
-
+    'fallback_locale' => 'en',
     /*
     |--------------------------------------------------------------------------
     | Application Environment
@@ -70,7 +70,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Europe/Moscow',
 
     /*
     |--------------------------------------------------------------------------
@@ -142,6 +142,11 @@ return [
     'maintenance' => [
         'driver' => 'file',
         // 'store'  => 'redis',
+    ],
+
+    'languages' => [
+        'en' => 'English',
+        'ru' => 'Russian',
     ],
 
     /*
